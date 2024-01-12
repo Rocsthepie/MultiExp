@@ -1,0 +1,1 @@
+I suggest you organize the images via folders since different mods can have the same filename for different assets

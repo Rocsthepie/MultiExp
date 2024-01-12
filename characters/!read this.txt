@@ -1,0 +1,5 @@
+characters are set with 1 and 2, 1 being the playables (bf) and 2 the opponents (dad)
+
+some of them are set with 3 (gf) but they don't really matter as of now
+
+you don't need to use this method when you add your character but it helps in organization :)

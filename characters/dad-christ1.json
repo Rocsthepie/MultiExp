@@ -1,0 +1,310 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				2,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Parent Christmas Idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-38,
+				25
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Parent Up Note Dad",
+			"indices": []
+		},
+		{
+			"offsets": [
+				5,
+				-25
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Parent Down Note Dad",
+			"indices": []
+		},
+		{
+			"offsets": [
+				5,
+				-25
+			],
+			"loop": false,
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "Parent Down Note Mom",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-38,
+				27
+			],
+			"loop": false,
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "Parent Up Note Mom",
+			"indices": []
+		},
+		{
+			"offsets": [
+				2,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Parent Christmas Idle"
+		},
+		{
+			"offsets": [
+				-38,
+				24
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Parent Up Note Dad"
+		},
+		{
+			"offsets": [
+				5,
+				-25
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "Parent Down Note Dad"
+		},
+		{
+			"offsets": [
+				-37,
+				28
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-alt-loop",
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Parent Up Note Mom"
+		},
+		{
+			"offsets": [
+				4,
+				-24
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-alt-loop",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "Parent Down Note Mom"
+		},
+		{
+			"offsets": [
+				-38,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Parent Up NoteDad MISS"
+		},
+		{
+			"offsets": [
+				5,
+				-38
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Parent Down NoteDad MISS"
+		},
+		{
+			"offsets": [
+				-63,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Parent Left NoteDad MISS"
+		},
+		{
+			"offsets": [
+				76,
+				-29
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Parent Right NoteDad MISS"
+		},
+		{
+			"offsets": [
+				-59,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Parent Left Note Dad"
+		},
+		{
+			"offsets": [
+				76,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Parent Right Note Dad"
+		},
+		{
+			"offsets": [
+				76,
+				-19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "Parent Right Note Mom"
+		},
+		{
+			"offsets": [
+				-59,
+				19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "Parent Left Note Mom"
+		},
+		{
+			"offsets": [
+				76,
+				-20
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Parent Right Note Dad"
+		},
+		{
+			"offsets": [
+				-59,
+				20
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Parent Left Note Dad"
+		},
+		{
+			"offsets": [
+				76,
+				-19
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-alt-loop",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "Parent Right Note Mom"
+		},
+		{
+			"offsets": [
+				-59,
+				19
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-alt-loop",
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "Parent Left Note Mom"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/basegame/mom_dad_christmas_assets",
+	"position": [
+		-100,
+		0
+	],
+	"healthicon": "parents",
+	"flip_x": false,
+	"healthbar_colors": [
+		196,
+		94,
+		174
+	],
+	"camera_position": [
+		100,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
