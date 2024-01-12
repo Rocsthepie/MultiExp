@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="O_rat.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bouncin0000" x="0" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0001" x="0" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0002" x="777" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0003" x="777" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0004" x="1554" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0005" x="1554" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0006" x="2331" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0007" x="2331" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0008" x="3108" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0009" x="3108" y="0" width="777" height="746"/>
+	<SubTexture name="Bouncin0010" x="0" y="746" width="777" height="746"/>
+	<SubTexture name="Bouncin0011" x="0" y="746" width="777" height="746"/>
+	<SubTexture name="Bouncin0012" x="777" y="746" width="777" height="746"/>
+	<SubTexture name="Bouncin0013" x="777" y="746" width="777" height="746"/>
+</TextureAtlas>

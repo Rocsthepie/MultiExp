@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="playlist.png">
+<SubTexture name="all" x="0" y="0" width="1211" height="880" frameX="0" frameY="0" frameWidth="1211" frameHeight="880" />
+<SubTexture name="basegame" x="1211" y="0" width="1211" height="880" frameX="0" frameY="0" frameWidth="1211" frameHeight="880" />
+<SubTexture name="favs" x="0" y="880" width="1211" height="880" frameX="0" frameY="0" frameWidth="1211" frameHeight="880" />
+<SubTexture name="mods" x="1211" y="880" width="1211" height="880" frameX="0" frameY="0" frameWidth="1211" frameHeight="880" />
+</TextureAtlas>

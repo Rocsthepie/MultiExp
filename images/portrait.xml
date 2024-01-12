@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="portrait.png">
+<SubTexture name="bf0000" x="0" y="0" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="gf0000" x="621" y="0" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="dad0000" x="1242" y="0" width="621" height="584" frameX="0" frameY="0" frameWidth="621" frameHeight="584" />
+<SubTexture name="mom0000" x="1863" y="0" width="621" height="579" frameX="0" frameY="0" frameWidth="621" frameHeight="579" />
+<SubTexture name="pico0000" x="2484" y="0" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="tankman0000" x="0" y="600" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="spooky0000" x="621" y="600" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="monster0000" x="1242" y="600" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="senpai pixel0000" x="1863" y="600" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="spirit pixel0000" x="2484" y="600" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="bf natal0000" x="0" y="1200" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="gf natal0000" x="621" y="1200" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="dad natal0000" x="1242" y="1200" width="621" height="584" frameX="0" frameY="0" frameWidth="621" frameHeight="584" />
+<SubTexture name="mom natal0000" x="1863" y="1200" width="621" height="579" frameX="0" frameY="0" frameWidth="621" frameHeight="579" />
+<SubTexture name="monster natal0000" x="2484" y="1200" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="bf pixel0000" x="0" y="1800" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="gf pixel0000" x="621" y="1800" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="bf gf0000" x="1242" y="1800" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="pico gf0000" x="1863" y="1800" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="default bf0000" x="2484" y="1800" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="default dad0000" x="0" y="2400" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="default gf0000" x="621" y="2400" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="no bf0000" x="1242" y="2400" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="no dad0000" x="1863" y="2400" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="no gf0000" x="2484" y="2400" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="senpai hd0000" x="0" y="3000" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="whitty0000" x="621" y="3000" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="whitty crazy0000" x="1242" y="3000" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+<SubTexture name="ritz0000" x="1863" y="3000" width="621" height="600" frameX="0" frameY="0" frameWidth="621" frameHeight="600" />
+</TextureAtlas>

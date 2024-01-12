@@ -1,0 +1,44 @@
+{
+	"storyName": "ritz rat fnf",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"difficulties": "Hard",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Ritz",
+			"ritz",
+			[
+				255,
+				120,
+				0
+			]
+		],
+		[
+			"Rolling",
+			"ritz",
+			[
+				255,
+				120,
+				0
+			]
+		],
+		[
+			"Cheesed",
+			"ritz",
+			[
+				255,
+				120,
+				0
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Week 1"
+}
