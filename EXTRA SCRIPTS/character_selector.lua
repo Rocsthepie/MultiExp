@@ -6,7 +6,7 @@ local characterNames = {
 	{'default1','no1','bf1','geef1','dad1','mom1','pico1','tankman1','spooky1','monster1','senpai1','spirit1'},
 
 	-- extra characters
-	{'bf-christ1','dad-christ1','mom-christ1','monster-christ1','bf-pixel1','bf-gf1'},
+	{'bf-christ1','dad-christ1','mom-christ1','monster-christ1','bf-pixel1','senpai-angry1','bf-gf1'},
 
 	-- mod characters
 	{'whitty1','whitty-crazy1','ritz1','senpai-hd1'}
@@ -17,7 +17,7 @@ local opponentNames = {
 	{'default2','no2','bf2','geef2','dad2','mom2','pico2','tankman2','spooky2','monster2','senpai2','spirit2'},
 
 	-- extra opponents
-	{'bf-christ2','dad-christ2','mom-christ2','monster-christ2','bf-pixel2','bf-gf2'},
+	{'bf-christ2','dad-christ2','mom-christ2','monster-christ2','bf-pixel2','senpai-angry2','bf-gf2'},
 
 	-- mod characters
 	{'whitty2','whitty-crazy2','ritz2','senpai-hd2'}
@@ -25,13 +25,13 @@ local opponentNames = {
 
 local gfNames = {
 	-- main gf
-	{'default3','no3','gf3','gf-christmas'},--------------note to self: add gf-tankman, pico-speakers, gf-whitty
+	{'default3','no3','gf3','speakers3','gf-christ3','gf-pixel3','gf-tankman3','pico-tankman3','gf-whitty3'},--------------note to self: add pico-speakers
 
 	-- p1 gf
-	{'bf1','geef1','dad1','mom2','pico1','tankman1'},
+	{'bf1','geef1','dad1','mom1','pico1','tankman1','spooky1','monster1','senpai1','spirit1','senpai-hd1','whitty1','ritz1'},
 
 	-- p2 gf
-	{'bf2','geef2','dad2','mom2','pico2','tankman2'}
+	{'bf2','geef2','dad2','mom2','pico2','tankman2','spooky2','monster2','senpai2','spirit2','senpai-hd2','whitty2','ritz2'}
 }
 
 local categoryNames = {'Main Characters','Character Variants','Mod Characters'} -- category display for characters
@@ -87,6 +87,7 @@ function onCreate()
 	addAnimationByPrefix('pfp1', 'mom-christ1', 'mom natal0', 1, true)
 	addAnimationByPrefix('pfp1', 'monster-christ1', 'monster natal0', 1, true)
 	addAnimationByPrefix('pfp1', 'bf-pixel1', 'bf pixel0', 1, true)
+	addAnimationByPrefix('pfp1', 'senpai-angry1', 'senpai angry pixel0', 1, true)
 	addAnimationByPrefix('pfp1', 'bf-gf1', 'bf gf0', 1, true)
 	addAnimationByPrefix('pfp1', 'whitty1', 'whitty0', 1, true)
 	addAnimationByPrefix('pfp1', 'whitty-crazy1', 'whitty crazy0', 1, true)
@@ -115,6 +116,7 @@ function onCreate()
 	addAnimationByPrefix('pfp2', 'mom-christ2', 'mom natal0', 1, true)
 	addAnimationByPrefix('pfp2', 'monster-christ2', 'monster natal0', 1, true)
 	addAnimationByPrefix('pfp2', 'bf-pixel2', 'bf pixel0', 1, true)
+	addAnimationByPrefix('pfp2', 'senpai-angry2', 'senpai angry pixel0', 1, true)
 	addAnimationByPrefix('pfp2', 'bf-gf2', 'bf gf0', 1, true)
 	addAnimationByPrefix('pfp2', 'whitty2', 'whitty0', 1, true)
 	addAnimationByPrefix('pfp2', 'whitty-crazy2', 'whitty crazy0', 1, true)
@@ -129,21 +131,52 @@ function onCreate()
 
 	makeAnimatedLuaSprite('pfp3', 'portrait', 475, 250)---------------------------------------------------------pfps gf
 	addAnimationByPrefix('pfp3', 'gf3', 'gf0', 1, true)
-	addAnimationByPrefix('pfp3', 'gf-christmas', 'gf natal0', 1, true)
-	addAnimationByPrefix('pfp3', 'gf-pixel', 'gf pixel0', 1, true)
-	addAnimationByPrefix('pfp3', 'pico3', 'pico gf0', 1, true)
+	addAnimationByPrefix('pfp3', 'gf-christ3', 'gf natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'gf-pixel3', 'gf pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'gf-tankman3', 'gf tankman0', 1, true)
+	addAnimationByPrefix('pfp3', 'gf-whitty3', 'gf whitty0', 1, true)
+	addAnimationByPrefix('pfp3', 'speakers3', 'speakers0', 1, true)
+	addAnimationByPrefix('pfp3', 'pico-tankman3', 'pico tankman0', 1, true)
 	addAnimationByPrefix('pfp3', 'bf1', 'bf0', 1, true)
-	addAnimationByPrefix('pfp3', 'dad1', 'dad0', 1, true)
-	addAnimationByPrefix('pfp3', 'bf2', 'bf0', 1, true)
-	addAnimationByPrefix('pfp3', 'dad2', 'dad0', 1, true)
-	addAnimationByPrefix('pfp3', 'pico1', 'pico0', 1, true)
-	addAnimationByPrefix('pfp3', 'pico2', 'pico0', 1, true)
-	addAnimationByPrefix('pfp3', 'tankman1', 'tankman0', 1, true)
-	addAnimationByPrefix('pfp3', 'tankman2', 'tankman0', 1, true)
 	addAnimationByPrefix('pfp3', 'geef1', 'gf0', 1, true)
-	addAnimationByPrefix('pfp3', 'geef2', 'gf0', 1, true)
+	addAnimationByPrefix('pfp3', 'pico1', 'pico0', 1, true)
+	addAnimationByPrefix('pfp3', 'dad1', 'dad0', 1, true)
 	addAnimationByPrefix('pfp3', 'mom1', 'mom0', 1, true)
+	addAnimationByPrefix('pfp3', 'tankman1', 'tankman0', 1, true)
+	addAnimationByPrefix('pfp3', 'spooky1', 'spooky0', 1, true)
+	addAnimationByPrefix('pfp3', 'monster1', 'monster0', 1, true)
+	addAnimationByPrefix('pfp3', 'senpai1', 'senpai pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'spirit1', 'spirit pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-christ1', 'bf natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'dad-christ1', 'dad natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'mom-christ1', 'mom natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'monster-christ1', 'monster natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-pixel1', 'bf pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-gf1', 'bf gf0', 1, true)
+	addAnimationByPrefix('pfp3', 'whitty1', 'whitty0', 1, true)
+	addAnimationByPrefix('pfp3', 'whitty-crazy1', 'whitty crazy0', 1, true)
+	addAnimationByPrefix('pfp3', 'ritz1', 'ritz0', 1, true)
+	addAnimationByPrefix('pfp3', 'senpai-hd1', 'senpai hd0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf2', 'bf0', 1, true)
+	addAnimationByPrefix('pfp3', 'geef2', 'gf0', 1, true)
+	addAnimationByPrefix('pfp3', 'pico2', 'pico0', 1, true)
+	addAnimationByPrefix('pfp3', 'dad2', 'dad0', 1, true)
 	addAnimationByPrefix('pfp3', 'mom2', 'mom0', 1, true)
+	addAnimationByPrefix('pfp3', 'tankman2', 'tankman0', 1, true)
+	addAnimationByPrefix('pfp3', 'spooky2', 'spooky0', 1, true)
+	addAnimationByPrefix('pfp3', 'monster2', 'monster0', 1, true)
+	addAnimationByPrefix('pfp3', 'senpai2', 'senpai pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'spirit2', 'spirit pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-christ2', 'bf natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'dad-christ2', 'dad natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'mom-christ2', 'mom natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'monster-christ2', 'monster natal0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-pixel2', 'bf pixel0', 1, true)
+	addAnimationByPrefix('pfp3', 'bf-gf2', 'bf gf0', 1, true)
+	addAnimationByPrefix('pfp3', 'whitty2', 'whitty0', 1, true)
+	addAnimationByPrefix('pfp3', 'whitty-crazy2', 'whitty crazy0', 1, true)
+	addAnimationByPrefix('pfp3', 'ritz2', 'ritz0', 1, true)
+	addAnimationByPrefix('pfp3', 'senpai-hd2', 'senpai hd0', 1, true)
 	addAnimationByPrefix('pfp3', 'no3', 'no gf0', 1, true)
 	addAnimationByPrefix('pfp3', 'default3', 'default gf0', 1, true)
 
@@ -325,14 +358,15 @@ function onTimerCompleted(tag)
 			setProperty('gf.visible', false)
 		elseif gfCategory > 1 then
 			triggerEvent('Change Character', 2, gfNames[gfCategory][gfPage])
-			if gfCategory == 2 then
-				setCharacterX('gf', defaultBoyfriendX - 150)
-				setCharacterY('gf', defaultBoyfriendY - 30)
-				setProperty('gf.flipX', not getProperty('gf.flipX'))
-			else
-				setCharacterX('gf', defaultOpponentX + 150)
-				setCharacterY('gf', defaultOpponentY - 30)
-			end
+		end
+		if string.find(getProperty('gf.curCharacter'), '1') then -- if gf is an Extra Player One
+			setCharacterX('gf', defaultBoyfriendX - 150)
+			setCharacterY('gf', defaultBoyfriendY - 30)
+			setProperty('gf.flipX', not getProperty('gf.flipX'))
+		end
+		if string.find(getProperty('gf.curCharacter'), '2') then -- if gf is an Extra Player Two
+			setCharacterX('gf', defaultOpponentX + 150)
+			setCharacterY('gf', defaultOpponentY - 30)
 		end
 	end
 
