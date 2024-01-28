@@ -1,9 +1,9 @@
 {
 	"song": {
 		"speed": 3.2,
-		"stage": "alley-balls",
-		"player1": "bf",
-		"player2": "whitbonkers",
+		"stage": "ballistic",
+		"player1": "bf1",
+		"player2": "whitty-crazy2",
 		"player3": null,
 		"events": [
 			[
@@ -150,7 +150,7 @@
 		"notes": [],
 		"splashSkin": null,
 		"validScore": false,
-		"gfVersion": "gf_but_not_juicy_enough",
+		"gfVersion": "gf-whitty3",
 		"bpm": 210.5,
 		"arrowSkin": "",
 		"needsVoices": true,
