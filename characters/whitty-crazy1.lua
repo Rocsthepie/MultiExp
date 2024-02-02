@@ -1,7 +1,3 @@
 function goodNoteHit()
-
-
-triggerEvent('Add Camera Zoom',0.01,0.02)
-
-
+    triggerEvent('Add Camera Zoom', 0.01, 0.02)
 end

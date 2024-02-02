@@ -67,8 +67,8 @@ function onCreate()
 	setObjectCamera('fader', 'other')
 
 	makeLuaSprite('bagr', 'multibg', 0, 0)
-	setObjectCamera('bagr','hud');
-	scaleObject('bagr', 1.5, 1.5);
+	setObjectCamera('bagr', 'hud')
+	scaleObject('bagr', 1.5, 1.5)
 	addLuaSprite('bagr', true)
 
 	makeAnimatedLuaSprite('pfp1', 'portrait', 875, 250)---------------------------------------------------------pfps player
@@ -96,8 +96,8 @@ function onCreate()
 	addAnimationByPrefix('pfp1', 'no1', 'no bf0', 1, true)
 	addAnimationByPrefix('pfp1', 'default1', 'default bf0', 1, true)
 
-	scaleObject('pfp1', 0.5, 0.5);
-	setObjectCamera('pfp1','hud');
+	scaleObject('pfp1', 0.5, 0.5)
+	setObjectCamera('pfp1', 'hud')
 	addLuaSprite('pfp1', true)
 
 	makeAnimatedLuaSprite('pfp2', 'portrait', 75, 250)---------------------------------------------------------pfps oponent
@@ -125,8 +125,8 @@ function onCreate()
 	addAnimationByPrefix('pfp2', 'no2', 'no dad0', 1, true)
 	addAnimationByPrefix('pfp2', 'default2', 'default dad0', 1, true)
 
-	scaleObject('pfp2', 0.5, 0.5);
-	setObjectCamera('pfp2','hud');
+	scaleObject('pfp2', 0.5, 0.5)
+	setObjectCamera('pfp2', 'hud')
 	addLuaSprite('pfp2', true)
 
 	makeAnimatedLuaSprite('pfp3', 'portrait', 475, 250)---------------------------------------------------------pfps gf
@@ -180,101 +180,109 @@ function onCreate()
 	addAnimationByPrefix('pfp3', 'no3', 'no gf0', 1, true)
 	addAnimationByPrefix('pfp3', 'default3', 'default gf0', 1, true)
 
-	scaleObject('pfp3', 0.5, 0.5);
-	setObjectCamera('pfp3','hud');
+	scaleObject('pfp3', 0.5, 0.5)
+	setObjectCamera('pfp3', 'hud')
 	addLuaSprite('pfp3', true)
 
 	makeLuaText('ad', 'A or D to change character', 200, 0, 615)
-	setObjectCamera('ad','hud');
+	setObjectCamera('ad', 'hud')
 	addLuaText('ad')
 
 	makeLuaText('ws', 'W or S to change character category', 200, 0, 665)
-	setObjectCamera('ws','hud');
+	setObjectCamera('ws', 'hud')
 	addLuaText('ws')
 
 	makeLuaText('lr', 'LEFT or RIGHT to change character', 200, 1075, 615)
-	setObjectCamera('lr','hud');
+	setObjectCamera('lr', 'hud')
 	addLuaText('lr')
 
 	makeLuaText('ud', 'UP or DOWN to change character category', 200, 1075, 665)
-	setObjectCamera('ud','hud');
+	setObjectCamera('ud', 'hud')
 	addLuaText('ud')
 
 	makeLuaText('jl', 'J or L to change girlfriend', 200, 537, 615)
-	setObjectCamera('jl','hud');
+	setObjectCamera('jl', 'hud')
 	addLuaText('jl')
 
 	makeLuaText('ik', 'I or K to change girlfriend category', 200, 537, 665)
-	setObjectCamera('ik','hud');
+	setObjectCamera('ik', 'hud')
 	addLuaText('ik')
 
 	makeLuaText('character', 'Choose Your Characters', 1000, 130, 75)
-	setObjectCamera('character','hud');
-	setTextSize('character','75')
-	setTextAlignment('character','center')
+	setObjectCamera('character', 'hud')
+	setTextSize('character', 75)
+	setTextAlignment('character', 'center')
 	setTextFont('character', 'fnf.ttf')
-	setTextColor('character','ffff00')
+	setTextColor('character', 'ffff00')
 	addLuaText('character')
 
 	makeLuaText('cat1', categoryNames[category], 1000, 529, 215)
-	setObjectCamera('cat1','hud');
-	setTextSize('cat1','25')
-	setTextAlignment('cat1','center')
+	setObjectCamera('cat1', 'hud')
+	setTextSize('cat1', 25)
+	setTextAlignment('cat1', 'center')
 	setTextFont('cat1', 'fnf.ttf')
-	setTextColor('cat1','00ffff')
+	setTextColor('cat1', '00ffff')
 	addLuaText('cat1')
 
 	makeLuaText('cat2', opponentCategoryNames[opponentCategory], 1000, -271, 215)
-	setObjectCamera('cat2','hud');
-	setTextSize('cat2','25')
-	setTextAlignment('cat2','center')
+	setObjectCamera('cat2', 'hud')
+	setTextSize('cat2', 25)
+	setTextAlignment('cat2', 'center')
 	setTextFont('cat2', 'fnf.ttf')
-	setTextColor('cat2','00ffff')
+	setTextColor('cat2', '00FFFF')
 	addLuaText('cat2')
 
 	makeLuaText('cat3', gfCategoryNames[gfCategory], 1000, 130, 215)
-	setObjectCamera('cat3','hud');
-	setTextSize('cat3','25')
-	setTextAlignment('cat3','center')
+	setObjectCamera('cat3', 'hud')
+	setTextSize('cat3', 25)
+	setTextAlignment('cat3', 'center')
 	setTextFont('cat3', 'fnf.ttf')
-	setTextColor('cat3','00ffff')
+	setTextColor('cat3', '00FFFF')
 	addLuaText('cat3')
 
 	playMusic('offsetSong')
 end
 
 function onCreatePost()
-	setProperty('iconP1.visible', false)----------------------------------------------------------------hide HUD
+	-- hide hud
+	setProperty('iconP1.visible', false)
 	setProperty('iconP2.visible', false)
-	setProperty('healthBar.visible', false)
-	setProperty('healthBarBG.visible', false)
 	setProperty('scoreTxt.visible', false)
 	setProperty('scoreTxtP2.visible', false)
+
+	setProperty('healthBar.visible', false)
+	if version < '0.7.0' then
+		setProperty('healthBarBG.visible', false)
+	end
 end
 
 function onStartCountdown()
-	setProperty('iconP1.visible', true)----------------------------------------------------------------hide HUD
+	setProperty('iconP1.visible', true)
 	setProperty('iconP2.visible', true)
-	setProperty('healthBar.visible', true)
-	setProperty('healthBarBG.visible', true)
 	setProperty('scoreTxt.visible', true)
 	setProperty('scoreTxtP2.visible', true)
-	if not allowCountdown and not isStoryMode then
-		setProperty('inCutscene', true);
-		allowCountdown = true;
-		return Function_Stop;
+
+	setProperty('healthBar.visible', true)
+	if version < '0.7.0' then
+		setProperty('healthBarBG.visible', true)
 	end
 
-	return Function_Continue;
+	if not allowCountdown and not isStoryMode then
+		setProperty('inCutscene', true)
+		allowCountdown = true
+		return Function_Stop
+	end
+
+	return Function_Continue
 end
 
 function onUpdate()
-	if inSelection == false then
+	if not inSelection then
 		return
 	end
 
 	if getPropertyFromClass('flixel.FlxG', 'keys.justPressed.ENTER') or getPropertyFromClass('flixel.FlxG', 'keys.justPressed.SPACE') then
-		if getProperty('inCutscene') == true then
+		if getProperty('inCutscene') then
 			for i = 1, 3 do
 				removeLuaSprite('pfp' .. i)
 			end
@@ -291,7 +299,7 @@ function onUpdate()
 			setProperty('seenCutscene', true)
 		end
 	elseif getPropertyFromClass('flixel.FlxG', 'keys.justPressed.BACKSPACE') or getPropertyFromClass('flixel.FlxG', 'keys.justPressed.ESCAPE') then
-		exitSong(false)
+		exitSong()
 	end
 
 	if getPropertyFromClass('flixel.FlxG', 'keys.justPressed.LEFT') then
@@ -359,12 +367,17 @@ function onTimerCompleted(tag)
 		elseif gfCategory > 1 then
 			triggerEvent('Change Character', 2, gfNames[gfCategory][gfPage])
 		end
-		if string.find(getProperty('gf.curCharacter'), '1') then -- if gf is an Extra Player One
+
+		---@type string
+		local currentGirlfriendChar = getProperty('gf.curCharacter')
+
+		if currentGirlfriendChar:find('1') then
+			-- if gf is an Extra Player One
 			setCharacterX('gf', defaultBoyfriendX - 150)
 			setCharacterY('gf', defaultBoyfriendY - 30)
 			setProperty('gf.flipX', not getProperty('gf.flipX'))
-		end
-		if string.find(getProperty('gf.curCharacter'), '2') then -- if gf is an Extra Player Two
+		elseif currentGirlfriendChar:find('2') then
+			-- if gf is an Extra Player Two
 			setCharacterX('gf', defaultOpponentX + 150)
 			setCharacterY('gf', defaultOpponentY - 30)
 		end
@@ -383,7 +396,7 @@ function setCharacterCategory(categoryChange)
 	page = 1
 	maxPage = #characterNames[category]
 	playAnim('pfp1', characterNames[category][page], true)
-	setTextString('cat1', categoryNames[category]);
+	setTextString('cat1', categoryNames[category])
 end
 
 function setOpponentCategory(opponentCategoryChange)
@@ -393,7 +406,7 @@ function setOpponentCategory(opponentCategoryChange)
 	opponentPage = 1
 	opponentMaxPage = #opponentNames[opponentCategory]
 	playAnim('pfp2', opponentNames[opponentCategory][opponentPage], true)
-	setTextString('cat2', opponentCategoryNames[opponentCategory]);
+	setTextString('cat2', opponentCategoryNames[opponentCategory])
 end
 
 function setGfCategory(gfCategoryChange)
@@ -403,7 +416,7 @@ function setGfCategory(gfCategoryChange)
 	gfPage = 1
 	gfMaxPage = #gfNames[gfCategory]
 	playAnim('pfp3', gfNames[gfCategory][gfPage], true)
-	setTextString('cat3', gfCategoryNames[gfCategory]);
+	setTextString('cat3', gfCategoryNames[gfCategory])
 end
 
 function setCharacter(pageChange)
@@ -428,13 +441,7 @@ function setGf(pageChange)
 end
 
 function menuSelecterHandler(value, maxValue)
-	if value > maxValue then
-		return 1
-	elseif value < 1 then
-		return maxValue
-	end
-
-	return value
+	return math.max(1, math.min(maxValue, value))
 end
 
 function onTweenCompleted(tag)
